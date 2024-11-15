@@ -49,4 +49,4 @@ class ProductImage(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return 'Product Image : {}'.format(self.image)
+        return '{} : {}'.format(self.product, self.image)
