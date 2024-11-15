@@ -11,6 +11,7 @@ class Tag(models.Model):
         db_table = 'tags'
 
     def __str__(self):
+
         return self.name
 
 
@@ -28,7 +29,7 @@ class Product(models.Model):
         db_table = 'products'
 
     def __str__(self):
-        return 'Product {} : {}'.format(self.id, self.user)
+        return '{} : {}'.format(self.user, self.title)
 
 
 class ProductImage(models.Model):
